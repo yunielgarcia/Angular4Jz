@@ -1,11 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
 
-import { AppComponent } from './app.component';
-import { HomeModule } from './home/home.module';
+import {AppComponent} from './app.component';
+import {HomeModule} from './home/home.module';
 import {AppRoutingModule} from './app-routing.module';
-import {PageNotFoundComponent} from './PageNotFound.component';
+import {PageNotFoundComponent} from './page-not-found.component';
 import {AboutModule} from './about/about.module';
 
 
@@ -23,4 +23,5 @@ import {AboutModule} from './about/about.module';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

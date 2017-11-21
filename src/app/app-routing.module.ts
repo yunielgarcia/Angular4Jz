@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
-import {PageNotFoundComponent} from './PageNotFound.component';
+import {PageNotFoundComponent} from './page-not-found.component';
 
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      {path: '**', component: PageNotFoundComponent},
+        {path: '**', component: PageNotFoundComponent},
       ]
     )
   ],
@@ -15,4 +15,5 @@ import {PageNotFoundComponent} from './PageNotFound.component';
     RouterModule
   ]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

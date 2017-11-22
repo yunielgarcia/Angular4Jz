@@ -8,11 +8,13 @@ import {AppRoutingModule} from './app-routing.module';
 import {PageNotFoundComponent} from './page-not-found.component';
 import {AboutModule} from './about/about.module';
 import {IdeaModule} from './idea/idea.module';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     HomeModule,
     AboutModule,
     IdeaModule,

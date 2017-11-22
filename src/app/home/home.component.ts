@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {IIdea} from '../idea/idea';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   templateUrl: './home.component.html',
@@ -6,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  ideas: IIdea[];
+  test: string = 'testing binding';
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.ideas = this.route.snapshot.data['ideas'].results;
   }
 
 }
